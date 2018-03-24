@@ -1,24 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Onboarding-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Onboarding" customModule="Reboot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reboot logo" translatesAutoresizingMaskIntoConstraints="NO" id="GLw-Xw-erq">
+                                <rect key="frame" x="67" y="20" width="240" height="69"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zm7-Hk-W9C">
+                                <rect key="frame" x="67" y="315" width="240" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="YXV-bQ-oVd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4E-xA-7gJ">
+                                <rect key="frame" x="67" y="420" width="240" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="gDj-s8-De4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GLw-Xw-erq" secondAttribute="trailing" constant="68" id="5fC-5g-CSY"/>
+                            <constraint firstItem="zm7-Hk-W9C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="70y-5E-Kjy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g4E-xA-7gJ" secondAttribute="trailing" constant="68" id="AWM-xS-exC"/>
+                            <constraint firstItem="GLw-Xw-erq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="aht-nv-bop"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zm7-Hk-W9C" secondAttribute="trailing" constant="68" id="el1-8Z-65c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g4E-xA-7gJ" secondAttribute="bottom" constant="175" id="fX8-Mk-fJZ"/>
+                            <constraint firstItem="g4E-xA-7gJ" firstAttribute="top" secondItem="zm7-Hk-W9C" secondAttribute="bottom" constant="33" id="jI5-eA-Upk"/>
+                            <constraint firstItem="g4E-xA-7gJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="jZc-Ni-IbQ"/>
+                            <constraint firstItem="zm7-Hk-W9C" firstAttribute="top" secondItem="GLw-Xw-erq" secondAttribute="bottom" constant="226" id="nbI-Xw-ufw"/>
+                            <constraint firstItem="g4E-xA-7gJ" firstAttribute="top" secondItem="zm7-Hk-W9C" secondAttribute="bottom" constant="33" id="ngh-Ks-yyu"/>
+                            <constraint firstItem="GLw-Xw-erq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oTc-JE-9RW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="signInBtn" destination="g4E-xA-7gJ" id="5uy-fS-WID"/>
+                        <outlet property="signUpBtn" destination="zm7-Hk-W9C" id="Zu4-GY-NLR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="reboot logo" width="124" height="31"/>
+    </resources>
 </document>
