@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="Q95-j8-Hn0">
+            <objects>
+                <viewController id="bhy-a8-YeY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LEP-P0-8sw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dSk-DC-dWZ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="7zj-ef-mEW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="anU-bH-ugn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2030" y="382"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="ppk-Z9-ncj">
+            <objects>
+                <viewController id="f7i-fa-lf8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fPQ-kB-mZ7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aPk-Y2-oOe"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Messages" id="a86-Rc-hB1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="975-aC-57l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1108" y="627"/>
+        </scene>
+        <!--Explore Workouts-->
+        <scene sceneID="TE3-Th-00f">
+            <objects>
+                <viewController id="Vxb-eu-nAb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JPi-Sa-JgZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="f4G-rF-XpZ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Explore Workouts" id="Uha-vO-6ne"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7m-uE-Cdr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143" y="131"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="kSS-q2-OdI">
+            <objects>
+                <viewController id="sSe-dJ-JrH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wGn-ca-sKg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VQ1-c8-EAt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar icon" id="9Nm-jT-AvI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rPO-1c-UIY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143" y="-534"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="MPT-oc-Zzb">
+            <objects>
+                <tabBarController id="UOB-08-qim" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7s0-fL-2xl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="sSe-dJ-JrH" kind="relationship" relationship="viewControllers" id="OHw-tj-H4A"/>
+                        <segue destination="Vxb-eu-nAb" kind="relationship" relationship="viewControllers" id="zgX-pi-dtc"/>
+                        <segue destination="f7i-fa-lf8" kind="relationship" relationship="viewControllers" id="JXP-ck-9s0"/>
+                        <segue destination="bhy-a8-YeY" kind="relationship" relationship="viewControllers" id="YlC-Uk-Nrf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kac-Q1-euK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1095" y="-202"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar icon" width="23" height="26"/>
+    </resources>
+</document>

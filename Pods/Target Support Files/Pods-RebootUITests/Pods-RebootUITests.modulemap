@@ -1,0 +1,6 @@
+framework module Pods_RebootUITests {
+  umbrella header "Pods-RebootUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
